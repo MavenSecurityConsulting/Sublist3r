@@ -370,7 +370,7 @@ class YahooEnum(enumratorBaseThreaded):
 
 
 class AskEnum(enumratorBaseThreaded):
-    def __init__(self, domain, subdomains=None, q=None, silent=False, verbose=True, verify=verify):
+    def __init__(self, domain, subdomains=None, q=None, silent=False, verbose=True, verify=True):
         subdomains = subdomains or []
         base_url = 'http://www.ask.com/web?q={query}&page={page_no}&qid=8D6EE6BF52E0C04527E51F64F22C4534&o=0&l=dir&qsrc=998&qo=pagination'
         self.engine_name = "Ask"
